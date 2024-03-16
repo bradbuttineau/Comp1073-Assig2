@@ -12,8 +12,8 @@ class Smoothie{
     serveIt(){
     const cup = document.createElement("img");
     let smoothieImg = "images/smoothie.svg";
-
     }
+
     //smoothie sizes
     let smoothieSize;
     switch(this.size){
@@ -30,6 +30,6 @@ class Smoothie{
             smoothieSize= "100";
     }
     cup.setAttribute("height", smoothieSize);
-    let description= `A ${this.size}`
+    output.appendChild(cup);
 
 }

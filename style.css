@@ -1,0 +1,21 @@
+h1{
+    display: flex;
+    justify-content: center;
+}
+
+
+form{
+    
+    height: 40vh;
+    width: 40vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 30vw;
+    border: 2px black solid;
+    box-sizing: content-box;
+    padding: 15px;
+}
+div form{
+    padding: 20px;
+}
