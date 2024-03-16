@@ -1,35 +1,38 @@
 const output = document.querySelector('#app');
 
-class Smoothie{
-    constructor(size, smoMilk , smoType, smoTop, smoExtra){
-        this.size=size;
-        this.smoMilk=smoMilk;
-        this.smoType=smoType;
-        this.smoTop=smoTop;
-        this.smoExtra= smoExtra;
+class Smoothie {
+    constructor(size, smoMilk, smoType, smoTop, smoExtra) {
+        this.size = size;
+        this.smoMilk = smoMilk;
+        this.smoType = smoType;
+        this.smoTop = smoTop;
+        this.smoExtra = smoExtra;
     };
-   //show smoothie img
-    serveIt(){
-    const cup = document.createElement("img");
-    let smoothieImg = "images/smoothie.svg";
-    }
+    //show smoothie img
+    serveIt() {
+        const cup = document.createElement("img");
+        let smoothieImg = "images/smoothie.svg";
 
-    //smoothie sizes
-    let smoothieSize;
-    switch(this.size){
-        case "small":
-            smoothieSize= "100";
-            break;
-        case "medium":
-            smoothieSize= "125";
-            break;
-        case "large":
-            smoothieSize= "150";
-            break;
-        default:
-            smoothieSize= "100";
-    }
-    cup.setAttribute("height", smoothieSize);
-    output.appendChild(cup);
 
+        //smoothie sizes on screen
+        let smoothieSize;
+        switch (this.size) {
+            case "small":
+                smoothieSize = "100";
+
+                break;
+            case "medium":
+                smoothieSize = "125";
+                break;
+            case "large":
+                smoothieSize = "150";
+                break;
+            default:
+                smoothieSize = "100";
+        }
+        cup.setAttribute("height", smoothieSize);
+        output.appendChild(cup);
+    }
 }
+/* smoothie choices*/
+let bradsSmoothie = new Smoothie("small", "no", "orange", "chocolate", "none");
