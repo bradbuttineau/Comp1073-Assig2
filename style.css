@@ -40,12 +40,8 @@ h2 {
 form {
     height: 50vh;
     width: 20vw;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
     margin-left: 40vw;
     border: 2px black solid;
-    padding: 15px;
     font-size: 18px;
     color: #fff;
     background-color: rgb(18, 3, 55);
@@ -61,10 +57,10 @@ form {
     
 
 
-.form-group {
-    text-align: center;
-    justify-content: center;
-}
+
+
+
+
 
 .title {
     margin-top: 60px;

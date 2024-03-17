@@ -1,18 +1,22 @@
 const output = document.querySelector('#app');
 
 class Smoothie {
-    constructor(size, smoMilk, smoType, smoTop, smoExtra) {
+    constructor(size, smoType, smoTop, smoExtra, smoDairy) {
         this.size = size;
-        this.smoMilk = smoMilk;
         this.smoType = smoType;
         this.smoTop = smoTop;
         this.smoExtra = smoExtra;
+        this.smoDairy= smoDairy;
     };
     //show smoothie img
     serveIt() {
         const cup = document.createElement("img");
         let smoothieImg = "images/smoothie.svg";
-
+        if(this.smoDairy === true){
+            dairy= "yes"
+        }else{
+            dairy="no"
+        }
 
         //smoothie sizes on screen
         let smoothieSize;
@@ -35,4 +39,4 @@ class Smoothie {
     }
 }
 /* smoothie choices*/
-let bradsSmoothie = new Smoothie("small", "no", "orange", "chocolate", "none");
+let bradsSmoothie = new Smoothie("small", "orange", "chocolate", "none");
