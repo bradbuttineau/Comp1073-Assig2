@@ -5,17 +5,47 @@ class Smoothie {
         this.size = size;
         this.smoType = smoType;
         this.smoTop = smoTop;
-        this.smoDairy= smoDairy;
+        this.smoDairy = smoDairy;
     };
     //show smoothie img
     serveIt() {
         const cup = document.createElement("img");
         let smoothieImg = "images/smoothie.svg";
+
+        switch (this.smoType) {
+            case "orange":
+                smoothieImg = "images/orange.svg";
+
+                break;
+            case "lemon":
+                smoothieImg = "images/lemon.svg";
+                break;
+            case "dragon-fruit":
+                smoothieImg = "images/dragon-fruit.svg"
+                break;
+            case "grapefruits":
+                smoothieImg= "images/grapefruits.svg";
+                break;
+            case "banana":
+                smoothieImg= "images/banana-smoothie.svg";
+                break;
+            default:
+                smoothieImg= "images/smoothies.svg";
+
+        }
+
+
+
+
+
+
+
+
         let dairy;
-        if(this.smoDairy === true){
-            dairy= "yes"
-        }else{
-            dairy="no"
+        if (this.smoDairy === true) {
+            dairy = "yes"
+        } else {
+            dairy = "no"
         }
 
         //smoothie sizes on screen
@@ -23,6 +53,7 @@ class Smoothie {
         switch (this.size) {
             case "small":
                 smoothieSize = "100";
+
 
                 break;
             case "medium":
@@ -35,8 +66,10 @@ class Smoothie {
                 smoothieSize = "100";
         }
         cup.setAttribute("height", smoothieSize);
-       let description = `Your order is complete you ordered: ${this.size}, ${this.smoType}, ${this.smoTop} with ${this.dairy}`
-        output.appendChild(cup);
+        this.description = function () {
+            output.textContent = `Your order is complete you ordered: ${this.size}, ${this.smoType}, ${this.smoTop} with ${this.dairy}`
+        }
+
     }
 }
 /* smoothie choices*/
