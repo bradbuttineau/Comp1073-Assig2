@@ -38,7 +38,7 @@ h2 {
 
 
 form {
-    height: 50vh;
+    height: 52vh;
     width: 20vw;
     margin-left: 40vw;
     border: 2px black solid;
@@ -47,25 +47,27 @@ form {
     background-color: rgb(18, 3, 55);
     font-family: 'Times New Roman', Times, serif;
 }
-
+.label{
+    padding: 2px;
+}
 .photo{
     display: block;
     height: 80vh;
     width: 60vw;
     margin-left: 20%;
 }
-    
-
-
-
-
-
-
 
 .title {
     margin-top: 60px;
 }
 
 .button {
-    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+/*choices*/
+.choice1{
+    display: flex;
+    margin-left: 20px;
 }

@@ -1,4 +1,7 @@
-const output = document.querySelector('#app');
+
+const form = document.querySelector('form');
+const submit = document.getElementById('submit');
+const output= document.getElementById('output')
 
 class Smoothie {
     constructor(size, smoType, smoTop, smoDairy) {
@@ -34,13 +37,6 @@ class Smoothie {
 
         }
 
-
-
-
-
-
-
-
         let dairy;
         if (this.smoDairy === true) {
             dairy = "yes"
@@ -66,8 +62,13 @@ class Smoothie {
                 smoothieSize = "100";
         }
         cup.setAttribute("height", smoothieSize);
+        
+        
+        
+        
+        
         this.description = function () {
-            output.textContent = `Your order is complete you ordered: ${this.size}, ${this.smoType}, ${this.smoTop} with ${this.dairy}`
+            submit.textContent = `Your order is complete you ordered: ${this.size}, ${this.smoType}, ${this.smoTop} with ${dairy}`
         }
 
     }
