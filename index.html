@@ -9,82 +9,107 @@
     <title>Smoothie machine assignment 2</title>
 
 </head>
+
 <body>
     <header>
-        <h1> Please choose from options for your smoothie</h1>
+        <h1>The Fantastic Smoothie shop</h1>
     </header>
     <p class="app"></p>
-    <form >
-        <div class="form-group">
-            <label for="size">Size:</label>
-            <div>
-                <select class="form-select" aria-label="Default select example">
-                    <option selected></option>
-                    <option value="1">Small</option>
-                    <option value="2">Medium</option>
-                    <option value="3">Large</option>
-                </select>
-            </div>
-        </div>
-        <div class="form-group">
-            <label for="liquid">Liquid Type:</label>
-            <div>
-                <select class="form-select" aria-label="Default select example">
-                    <option selected></option>
-                    <option value="1">Dairy</option>
-                    <option value="2">Non-dairy</option>
-                    <option value="3">coconut water</option>
-                    <option value="4">Apple juice</option>
-                    <option value="5">Orange juice</option>
-                </select>
-            </div>
-        </div>
-        <div class="form-group">
-            <label for="smoothie type">Smoothie type:</label>
-            <div>
-                <select class="form-select" aria-label="Default select example">
-                    <option selected></option>
-                    <option value="1">Banana</option>
-                    <option value="2">Dragon Fruit</option>
-                    <option value="3">Lemon</option>
-                    <option value="4">Orange</option>
-                    <option value="5">Pear</option>
-                </select>
-            </div>
-        </div>
-        <div class="form-group">
-            <label for="toppings">Toppings:</label>
-            <div>
-                <select class="form-select" aria-label="Default select example">
-                    <option selected></option>
-                    <option value="1">Banana</option>
-                    <option value="2">Strawberry</option>
-                    <option value="3">Apple</option>
-                    <option value="4">Orange</option>
-                    <option value="5">Pear</option>
-                </select>
-            </div>
-        </div>
-        <div class="form-group">
-            <label for="toppings"> Extra Toppings:</label>
-            <div>
-                <select class="form-select" aria-label="Default select example">
-                    <option selected></option>
-                    <option value="1">Banana</option>
-                    <option value="2">Strawberry</option>
-                    <option value="3">Apple</option>
-                    <option value="4">Orange</option>
-                    <option value="5">Pear</option>
-                </select>
-            </div>
-        </div>
-        <div class="form-group">
-            <div class="button">
-                <button type="submit" class="btn btn-primary">Submit</button>
-            </div>
-        </div>
+    <img src="images/brooke-cagle-8jp-6SjVibM-unsplash.jpg" alt="shop image" class="photo">
+    <form action="#">
+        <label for="size">Size:</label>
+        <select name="sizes" id="size">
+            <option value="small">Small</option>
+            <option value="medium">Medium</option>
+            <option value="large">Large</option>
+        </select>
+        <label for="liquid">Liquid Type:</label>
+        <select name="liquid" id="liquid">
+            <option value="dairy">Dairy</option>
+            <option value="non-dairy">Non-dairy</option>
+            <option value="coconut water">Coconut water</option>
+            <option value="Apple juice">Apple juice</option>
+            <option value="Orange juice">Orange juice</option>
+        </select>
+        <input type="submit" value="Submit" />
     </form>
 
+    <!-- </form> -->
+    <!-- <form action="" method="GET" id="form1"> -->
+    <!-- <h2>Please choose from the following:</h2> -->
+    <!-- <div class="form-group"> -->
+    <!-- <label for="size">Size:</label></br> -->
+    <!-- <input id="size" type="hidden" name="size" /> -->
+    <!-- <div> -->
+    <!-- <select> -->
+    <!-- <option selected></option> -->
+    <!-- <option value="1">Small</option> -->
+    <!-- <option value="2">Medium</option> -->
+    <!-- <option value="3">Large</option> -->
+    <!-- </select> -->
+    <!-- </div></br> -->
+    <!-- </div> -->
+    <!-- <div class="form-group"> -->
+    <!-- <label for="liquid">Liquid Type:</label> -->
+    <!-- <input id="liquid" type="hidden" name="liquids" /> -->
+    <!-- <div> -->
+    <!-- <select> -->
+    <!-- <option selected></option> -->
+    <!-- <option value="1">Dairy</option> -->
+    <!-- <option value="2">Non-dairy</option> -->
+    <!-- <option value="3">coconut water</option> -->
+    <!-- <option value="4">Apple juice</option> -->
+    <!-- <option value="5">Orange juice</option> -->
+    <!-- </select> -->
+    <!-- </div></br> -->
+    <!-- </div> -->
+    <!-- <div class="form-group"> -->
+    <!-- <label for="smoothietype">Smoothie type:</label> -->
+    <!-- <input id="smoothietype" type="hidden" name="smoothie type" /> -->
+    <!-- <div> -->
+    <!-- <select> -->
+    <!-- <option selected></option> -->
+    <!-- <option value="1">Banana</option> -->
+    <!-- <option value="2">Dragon Fruit</option> -->
+    <!-- <option value="3">Lemon</option> -->
+    <!-- <option value="4">Orange</option> -->
+    <!-- <option value="5">Pear</option> -->
+    <!-- </select> -->
+    <!-- </div></br> -->
+    <!-- </div> -->
+    <!-- <div class="form-group"> -->
+    <!-- <label for="toppings">Toppings:</label> -->
+    <!-- <input id="toppingsbox" type="hidden" name="toppings" /> -->
+    <!-- <div> -->
+    <!-- <select> -->
+    <!-- <option selected></option> -->
+    <!-- <option value="1">Banana</option> -->
+    <!-- <option value="2">Strawberry</option> -->
+    <!-- <option value="3">Apple</option> -->
+    <!-- <option value="4">Orange</option> -->
+    <!-- <option value="5">Pear</option> -->
+    <!-- </select> -->
+    <!-- </div></br> -->
+    <!-- </div> -->
+    <!-- <div class="form-group"> -->
+    <!-- <label for="toppings" class="title"> Extra Toppings:</label> -->
+    <!-- <input id="toppingsbox" type="hidden" name="extra toppings" /> -->
+    <!-- <select> -->
+    <!-- <option selected></option> -->
+    <!-- <option value="1">Banana</option> -->
+    <!-- <option value="2">Strawberry</option> -->
+    <!-- <option value="3">Apple</option> -->
+    <!-- <option value="4">Orange</option> -->
+    <!-- <option value="5">Pear</option> -->
+    <!-- </select> -->
+    <!-- </div></br> -->
+
+    <!-- <div class="form-group"> -->
+    <!-- <div class="button"> -->
+    <!-- <button type="submit" class="btn btn-primary">Submit</button> -->
+    <!-- </div> -->
+    <!-- </div> -->
+    <!-- </form> -->
 
 
 
@@ -93,9 +118,10 @@
 
 
 
-    
 
-    
+
+
+
     <footer>
     </footer>
 </body>
