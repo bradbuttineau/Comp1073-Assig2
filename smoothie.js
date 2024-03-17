@@ -68,7 +68,7 @@ class Smoothie {
         
         
         this.description = function () {
-            submit.textContent = `Your order is complete you ordered: ${this.size}, ${this.smoType}, ${this.smoTop} with ${dairy}`
+            output.textContent = `Your order is complete you ordered: ${this.size}, ${this.smoType}, ${this.smoTop} with ${dairy}`
         }
 
     }
