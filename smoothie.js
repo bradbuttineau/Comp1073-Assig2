@@ -1,9 +1,10 @@
 
-let choice1 = document.getElementById("form1");
+let submit= document.getElementById('form1')
 const output = document.getElementById('output')
- 
+ let choice1=[ "small", "medium", "large"];
  let choice2=["banana", "orange", "pear", "dragon-fruit", "lemon", "grape" ];
  let choice3=["strawberry", "orange-slices", "apple-slices", "chocolate-chunks", "lemon-slices","whip-cream"];
+ let choice4=["yes", "no"];
 class Smoothie {
     constructor(size, smoType, smoTop, smoDairy) {
         this.size = size;
@@ -66,7 +67,6 @@ class Smoothie {
 
         }
         document.getElementById(form1).addEventListener("checked", function(){
-            choice1=submit();
             output.textContent = `Your order is complete. You ordered: ${this.size}, ${this.smoType}, ${this.smoTop} with ${dairy}`;
 
 

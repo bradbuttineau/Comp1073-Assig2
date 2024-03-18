@@ -1,5 +1,5 @@
 html {
-    min-height: 100vh;
+    max-height: 100vh;
     scroll-behavior: smooth;
     border: 4px solid rgb(18, 3, 55);
 }
@@ -14,8 +14,9 @@ main {
     background-image: linear-gradient(118deg, rgba(119, 228, 119, 0.2) 0%, rgba(119, 228, 119, 0.2) 16.667%, rgba(108, 224, 149, 0.2) 16.667%, rgba(108, 224, 149, 0.2) 33.334%, rgba(151, 239, 30, 0.2) 33.334%, rgba(151, 239, 30, 0.2) 50.001%, rgba(97, 220, 179, 0.2) 50.001%, rgba(97, 220, 179, 0.2) 66.668%, rgba(140, 235, 60, 0.2) 66.668%, rgba(140, 235, 60, 0.2) 83.335%, rgba(129, 231, 90, 0.2) 83.335%, rgba(129, 231, 90, 0.2) 100.002%), linear-gradient(73deg, rgba(119, 228, 119, 0.2) 0%, rgba(119, 228, 119, 0.2) 16.667%, rgba(108, 224, 149, 0.2) 16.667%, rgba(108, 224, 149, 0.2) 33.334%, rgba(151, 239, 30, 0.2) 33.334%, rgba(151, 239, 30, 0.2) 50.001%, rgba(97, 220, 179, 0.2) 50.001%, rgba(97, 220, 179, 0.2) 66.668%, rgba(140, 235, 60, 0.2) 66.668%, rgba(140, 235, 60, 0.2) 83.335%, rgba(129, 231, 90, 0.2) 83.335%, rgba(129, 231, 90, 0.2) 100.002%), linear-gradient(163deg, rgba(119, 228, 119, 0.2) 0%, rgba(119, 228, 119, 0.2) 16.667%, rgba(108, 224, 149, 0.2) 16.667%, rgba(108, 224, 149, 0.2) 33.334%, rgba(151, 239, 30, 0.2) 33.334%, rgba(151, 239, 30, 0.2) 50.001%, rgba(97, 220, 179, 0.2) 50.001%, rgba(97, 220, 179, 0.2) 66.668%, rgba(140, 235, 60, 0.2) 66.668%, rgba(140, 235, 60, 0.2) 83.335%, rgba(129, 231, 90, 0.2) 83.335%, rgba(129, 231, 90, 0.2) 100.002%), linear-gradient(163deg, rgb(186, 121, 16), rgb(25, 61, 211));
 
 }
-header{
-    
+
+header {
+
     background-color: green;
     border: 4px solid rgb(18, 3, 55);
 }
@@ -42,11 +43,12 @@ h2 {
 
 }
 
-
+/*form */
 form {
-    height: 110vh;
+    height: 85vh;
     width: 20vw;
     margin-left: 40vw;
+
     padding: 40px;
     border: 2px black solid;
     font-size: 18px;
@@ -55,11 +57,12 @@ form {
     font-family: 'Times New Roman', Times, serif;
 }
 
-.label {
-    color: blue;
-    padding: 2px;
-}
+label {}
 
+
+
+
+/*image*/
 .photo {
     display: block;
     height: 80vh;
@@ -71,9 +74,21 @@ form {
     margin-top: 60px;
 }
 
-.button {
-    display: flex;
-    color: blue;
-    justify-content: center;
-    margin-top: 10px;
+#button {
+    padding: 5px;
+    margin-top: 15px;
 }
+
+
+
+/* .choice1 { */
+/* display: flex; */
+/* } */
+/*  */
+/* .choice2 { */
+/* display: flex; */
+/* } */
+/*  */
+/* .choice3 { */
+/* display: flex; */
+/* } */
