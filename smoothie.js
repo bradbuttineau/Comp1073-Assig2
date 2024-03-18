@@ -63,9 +63,9 @@ class Smoothie {
                 smoothieImg = "images/smoothies.svg";
 
         }
-        document.getElementById(form1).addEventListener("click", function(){
-            form1=submit();
-            submit.textContent = `Your order is complete. You ordered: ${this.size}, ${this.smoType}, ${this.smoTop} with ${dairy}`;
+        document.getElementById(form1).addEventListener("checked", function(){
+            choice1=submit();
+            output.textContent = `Your order is complete. You ordered: ${this.size}, ${this.smoType}, ${this.smoTop} with ${dairy}`;
 
 
         });
