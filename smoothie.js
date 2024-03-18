@@ -1,7 +1,6 @@
 
-const form = document.querySelector('form');
-const submit = document.getElementById('submit');
-const output= document.getElementById('output')
+let choice1 = document.getElementById("form1");
+const output = document.getElementById('output')
 
 class Smoothie {
     constructor(size, smoType, smoTop, smoDairy) {
@@ -10,11 +9,39 @@ class Smoothie {
         this.smoTop = smoTop;
         this.smoDairy = smoDairy;
     };
-    //show smoothie img
     serveIt() {
-        const cup = document.createElement("img");
+        //generate smoothie img
+        const drink = document.createElement("img");
         let smoothieImg = "images/smoothie.svg";
+        let dairy;
+        //dairy in smoothie option
+        if (this.smoDairy === true) {
+            dairy = "yes";
+        } else {
+            dairy = "no";
+        }
 
+        //smoothie sizes
+        let smoothieSize;
+        switch (this.size) {
+            case "small":
+                smoothieSize = "100";
+                break;
+            case "medium":
+                smoothieSize = "125";
+                break;
+            case "large":
+                smoothieSize = "150";
+                break;
+            default:
+                smoothieSize = "100";
+        }
+        drink.setAttribute("height", smoothieSize);
+        output.appendChild(drink);
+
+        // img shown by type
+        drink.setAttribute("scr", smoothieImg);
+        smoothieImg= this.smoType;
         switch (this.smoType) {
             case "orange":
                 smoothieImg = "images/orange.svg";
@@ -27,51 +54,23 @@ class Smoothie {
                 smoothieImg = "images/dragon-fruit.svg"
                 break;
             case "grapefruits":
-                smoothieImg= "images/grapefruits.svg";
+                smoothieImg = "images/grapefruits.svg";
                 break;
             case "banana":
-                smoothieImg= "images/banana-smoothie.svg";
+                smoothieImg = "images/banana-smoothie.svg";
                 break;
             default:
-                smoothieImg= "images/smoothies.svg";
+                smoothieImg = "images/smoothies.svg";
 
         }
-
-        let dairy;
-        if (this.smoDairy === true) {
-            dairy = "yes"
-        } else {
-            dairy = "no"
-        }
-
-        //smoothie sizes on screen
-        let smoothieSize;
-        switch (this.size) {
-            case "small":
-                smoothieSize = "100";
+        document.getElementById(form1).addEventListener("click", function(){
+            form1=submit();
+            submit.textContent = `Your order is complete. You ordered: ${this.size}, ${this.smoType}, ${this.smoTop} with ${dairy}`;
 
 
-                break;
-            case "medium":
-                smoothieSize = "125";
-                break;
-            case "large":
-                smoothieSize = "150";
-                break;
-            default:
-                smoothieSize = "100";
-        }
-        cup.setAttribute("height", smoothieSize);
-        
-        
-        
-        
-        
-        this.description = function () {
-            output.textContent = `Your order is complete you ordered: ${this.size}, ${this.smoType}, ${this.smoTop} with ${dairy}`
-        }
+        });
+
 
     }
 }
-/* smoothie choices*/
-let bradsSmoothie = new Smoothie("small", "orange", "chocolate", "none");
+
