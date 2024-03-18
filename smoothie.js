@@ -1,7 +1,9 @@
 
 let choice1 = document.getElementById("form1");
 const output = document.getElementById('output')
-
+ 
+ let choice2=["banana", "orange", "pear", "dragon-fruit", "lemon", "grape" ];
+ let choice3=["strawberry", "orange-slices", "apple-slices", "chocolate-chunks", "lemon-slices","whip-cream"];
 class Smoothie {
     constructor(size, smoType, smoTop, smoDairy) {
         this.size = size;
