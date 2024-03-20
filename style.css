@@ -46,11 +46,11 @@ h2 {
 
 /*form */
 form {
-    height: 85vh;
+    height: 115vh;
     width: 20vw;
     margin-left: 40vw;
-
-    padding: 40px;
+    margin-top: 20px;
+    padding: 60px;
     border: 2px black solid;
     font-size: 18px;
     color: #fff;

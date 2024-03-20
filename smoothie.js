@@ -69,7 +69,7 @@ class Smoothie {
         
          
             output.textContent = `Your order is complete. You ordered: ${this.size}, ${this.smoType}, ${this.smoTop} with ${dairy}`;
-
+            
         
         
 
