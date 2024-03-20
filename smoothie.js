@@ -66,9 +66,9 @@ class Smoothie {
                 smoothieImg = "images/smoothies.svg";
 
         }
-        
+            Smoothie.addEventListener("click", output);
          
-            output.textContent = `Your order is complete. You ordered: ${this.size}, ${this.smoType}, ${this.smoTop} with ${dairy}`;
+            output.textContent = `Your order is complete. You ordered: ${this.smoothieSize}, ${this.smoType}, ${this.smoTop} with ${dairy}`;
             
         
         
