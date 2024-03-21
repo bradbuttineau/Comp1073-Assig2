@@ -1,7 +1,7 @@
 
 let button= document.getElementById('form1')
 const output = document.getElementById('output')
- let choice1=[ "small", "medium", "large"];
+let choice1=[ "small", "medium", "large"];
  let choice2=["banana", "orange", "pear", "dragon-fruit", "lemon", "grape" ];
  let choice3=["strawberry", "orange-slices", "apple-slices", "chocolate-chunks", "lemon-slices","whip-cream"];
  let choice4=["yes", "no"];
@@ -66,7 +66,7 @@ class Smoothie {
                 smoothieImg = "images/smoothies.svg";
 
         }
-            Smoothie.addEventListener("click", output);
+            Smoothie.addEventListener("click", Smoothie());
          
             output.textContent = `Your order is complete. You ordered: ${this.smoothieSize}, ${this.smoType}, ${this.smoTop} with ${dairy}`;
             
